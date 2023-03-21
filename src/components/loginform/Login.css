@@ -1,0 +1,321 @@
+/*!--Login*/
+/* Estilos generales */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 65%;
+  margin: auto;
+  height: 100vh;
+  gap: 2rem;
+}
+.login-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74px;
+  color: #F0F0F0;
+}
+h6,
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #BABABA;
+}
+span {
+  color: #0083FD;
+}
+/* Estilos del formulario */
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+/* Estilos de los inputs */
+.input {
+  width: 100%;
+  height: 70px;
+  background: rgba(217, 217, 217, 0.2);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  border: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  padding: 0 3.5rem 0 19px;
+  color: #FFFFFF;
+  font-weight: 400;
+  outline: none;
+}
+.input-group {
+  width: 100%;
+  position: relative;
+}
+.input-pleacejolder {
+  position: absolute;
+  top: 50%;
+  left: 1.1rem;
+  transform: translateY(-50%);
+  color: #BABABA;
+  pointer-events: none;
+}
+
+.input:focus~.input-pleacejolder,
+.input:valid~.input-pleacejolder {
+  top: 20%;
+  font-size: 12px;
+}
+
+.input:focus {
+  border-color: #0083FD;
+  box-shadow: 0 0 0 3px #0083FD;
+}
+
+/* Estilos de los botones */
+.btn__login,
+.btn__google,
+.btn__facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  font-weight: 700;
+  margin-top: 16px;
+  padding: 0px 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn__login {
+  background: #0083FD;
+  border: 1px solid #000000;
+  color: #FFFFFF;
+  width: 30%;
+  min-width: 200px
+}
+
+/* .btn__login:hover,.btn__google:hover,.btn__facebook:hover  {
+  
+} */
+.btn__login:active,
+.btn__google:active,
+.btn__facebook:active {
+  scale: 0.96;
+}
+
+.btn__google {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #000000;
+}
+
+.btn__facebook {
+  position: relative;
+  background: #2749FF;
+  color: #FFFFFF;
+}
+
+/* Iconos de los botones */
+.iconGoogle,
+.iconFacebook,
+.iconEmail,
+.iconPassword,
+.iconPasswordShow {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  font-size: 30px;
+  color: #C8C8C8;
+}
+
+
+.iconGoogle {
+  background-image: url('../../../public/icons/GoogleIcon.svg');
+  left: 1rem;
+}
+
+.iconFacebook {
+  background-image: url('../../../public/icons/FacebookIcon.svg');
+  left: 1rem;
+}
+
+.iconEmail {
+  background-image: url('../../../public/icons/EmailIcon.svg');
+
+}
+
+.iconPassword {
+  background-image: url('../../../public/icons/Passwordicon.svg');
+  cursor: pointer;
+}
+
+.iconPasswordShow {
+  background-image: url('../../../public/icons/PasswordiconShow.svg');
+  cursor: pointer;
+}
+/* Estilos de la sección de login social */
+.social-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+.social-login .btn__google {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.social-login .btn__facebook {
+  background: #2749FF;
+}
+
+.social-login button:hover {
+  cursor: pointer;
+}
+
+/* Media queries */
+@media (min-width: 260px) {
+  .login {
+    width: 100%;
+  }
+
+  .social-login {
+    width: 80%
+  }
+}
+
+@media (min-width: 360px) {
+  .login {
+    width: 90%;
+  }
+
+  .social-login {
+    width: 77%
+  }
+}
+
+@media (min-width: 400px) {
+  .login {
+    width: 90%;
+  }
+
+  .social-login {
+    width: 75%
+  }
+}
+
+@media (min-width: 600px) {
+  .login {
+    width: 70%;
+  }
+
+  .social-login {
+    width: 74%
+  }
+}
+
+@media (min-width: 900px) {
+  .login {
+    width: 65%;
+  }
+
+  .social-login {
+    width: 72%
+  }
+}
+
+@media (min-width: 1200px) {
+  .login {
+    width: 50%;
+  }
+
+  .social-login {
+    width: 70%
+  }
+}
+
+@media (min-width: 1700px) {
+  .login {
+    width: 40%;
+  }
+
+  .social-login {
+    width: 65%
+  }
+}
+
+@media (min-width: 1900px) {
+  .login {
+    width: 700px;
+    max-width: 100%;
+  }
+
+  .social-login {
+    width: 80%
+  }
+}
+
+@media (min-width: 3400px) {
+  .login {
+    width: 700px;
+    max-width: 100%;
+  }
+
+  .social-login {
+    width: 80%
+  }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  caret-color: #fff;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #4d4f53 inset;
+
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  -moz-transition: background-color 5000s ease-in-out 0s;
+  -ms-transition: background-color 5000s ease-in-out 0s;
+  -o-transition: background-color 5000s ease-in-out 0s;
+}
