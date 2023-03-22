@@ -6,6 +6,7 @@
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
 }
+
 .login {
   display: flex;
   justify-content: center;
@@ -16,6 +17,7 @@
   height: 100vh;
   gap: 2rem;
 }
+
 .login-text {
   display: flex;
   justify-content: flex-start;
@@ -24,12 +26,14 @@
   width: 100%;
   gap: 1.5rem;
 }
+
 h1 {
   font-weight: 700;
   font-size: 64px;
   line-height: 74px;
   color: #F0F0F0;
 }
+
 h6,
 p {
   font-weight: 400;
@@ -37,9 +41,11 @@ p {
   line-height: 18px;
   color: #BABABA;
 }
+
 span {
   color: #0083FD;
 }
+
 /* Estilos del formulario */
 .login-form {
   display: flex;
@@ -70,10 +76,12 @@ span {
   font-weight: 400;
   outline: none;
 }
+
 .input-group {
   width: 100%;
   position: relative;
 }
+
 .input-pleacejolder {
   position: absolute;
   top: 50%;
@@ -145,9 +153,7 @@ span {
 /* Iconos de los botones */
 .iconGoogle,
 .iconFacebook,
-.iconEmail,
-.iconPassword,
-.iconPasswordShow {
+.iconEmail,.iconPassword {
   position: absolute;
   top: 50%;
   right: 20px;
@@ -163,29 +169,23 @@ span {
 
 
 .iconGoogle {
-  background-image: url('../../../public/icons/GoogleIcon.svg');
+  background-image: url('./icons/GoogleIcon.svg');
   left: 1rem;
 }
 
 .iconFacebook {
-  background-image: url('../../../public/icons/FacebookIcon.svg');
+  background-image: url('./icons/FacebookIcon.svg');
   left: 1rem;
 }
 
 .iconEmail {
-  background-image: url('../../../public/icons/EmailIcon.svg');
-
+  background-image: url('./icons/EmailIcon.svg');
 }
 
 .iconPassword {
-  background-image: url('../../../public/icons/Passwordicon.svg');
   cursor: pointer;
 }
 
-.iconPasswordShow {
-  background-image: url('../../../public/icons/PasswordiconShow.svg');
-  cursor: pointer;
-}
 /* Estilos de la sección de login social */
 .social-login {
   display: flex;
@@ -300,6 +300,7 @@ span {
     width: 80%
   }
 }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -312,7 +313,6 @@ select:-webkit-autofill:focus {
   caret-color: #fff;
   -webkit-text-fill-color: #fff;
   -webkit-box-shadow: 0 0 0px 1000px #4d4f53 inset;
-
   transition: background-color 5000s ease-in-out 0s;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   -moz-transition: background-color 5000s ease-in-out 0s;

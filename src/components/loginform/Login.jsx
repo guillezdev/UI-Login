@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import pass from './icons/Passwordicon.svg'
+import passShow from './icons/PasswordiconShow.svg'
 import "./Login.css";
 
 const Login = () => {
@@ -37,10 +39,7 @@ const Login = () => {
             id='password'
             name='password'
           />
-          <span
-            className={showPassword ? "iconPasswordShow" : "iconPassword"}
-            onClick={handleShowPassword}
-          ></span>
+          <img onClick={handleShowPassword} className="iconPassword" src={showPassword ? passShow : pass} alt="ojo" />
           <label className='input-pleacejolder'>Contraseña</label>
         </div>
         <button className='btn__login' type='submit'>
